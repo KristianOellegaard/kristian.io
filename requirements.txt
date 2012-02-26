@@ -4,3 +4,4 @@ django-cms
 django-filer
 cmsplugin-filer
 dploi-fabric
+gunicorn

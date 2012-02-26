@@ -140,6 +140,9 @@ INSTALLED_APPS = (
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
     'easy_thumbnails',
+
+    # for deployment
+    'gunicorn',
 )
 
 # A sample logging configuration. The only tangible logging
