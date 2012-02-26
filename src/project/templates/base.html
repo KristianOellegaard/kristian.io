@@ -32,22 +32,11 @@
   <body>
     {% cms_toolbar %}
 	<div class="container">
-		{% placeholder "main" %}
+		{% block content %}{% placeholder "main" %}{% endblock %}
+		{% if DEBUG %}
 		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		{% endif %}
 	</div> <!-- /container -->
 	{% render_block "js" %}
-	<script src="{{ STATIC_URL }}/js/jquery.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-transition.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-alert.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-modal.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-dropdown.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-scrollspy.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-tab.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-tooltip.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-popover.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-button.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-collapse.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-carousel.js"></script>
-	<script src="{{ STATIC_URL }}/js/bootstrap-typeahead.js"></script>
   </body>
 </html>
