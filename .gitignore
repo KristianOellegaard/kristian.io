@@ -3,3 +3,4 @@
 /lib
 .Python
 *.sqlite3
+deployment.py
