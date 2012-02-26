@@ -1,0 +1,5 @@
+Django
+South
+django-cms
+django-filer
+cmsplugin-filer
