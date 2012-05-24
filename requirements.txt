@@ -5,3 +5,4 @@ django-filer
 cmsplugin-filer
 dploi-fabric
 gunicorn
+PIL
